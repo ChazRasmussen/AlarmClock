@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/buffer"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:hint="@string/newline"
+        />
+
+    <EditText
+        android:id="@+id/enter_name"
+        android:layout_below="@id/buffer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name_enter"
+        />
+
+    <EditText
+        android:id="@+id/enter_time"
+        android:layout_below="@id/enter_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/time_enter"
+        />
+    <Button
+        android:id="@+id/set_alarm"
+        android:layout_below="@id/enter_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/setAlarm"
+        android:onClick="saveAlarm"
+        />
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/set_alarm"
+        android:layout_below="@id/enter_time"
+        android:text="Cancel"
+        android:onClick="cancel"/>
+
+</RelativeLayout>
